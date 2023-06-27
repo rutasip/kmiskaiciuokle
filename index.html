@@ -2,43 +2,144 @@
 <html lang="lt">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description"
-        content="Nemokamas KMI (kūno masės indekso) skaičiuotuvas pagal pateiktą ūgį ir svorį apskaičiuoja KMI ir priskiria svorio kategorijai. Skirtas suaugusiems nuo 20 metų.">
+        content="KMI (kūno masės indekso) skaičiuoklė pagal pateiktą ūgį ir svorį apskaičiuoja KMI indeksą ir jį priskiria svorio kategorijai. Skirta suaugusiems nuo 20 metų.">
     <meta name="keywords" content="KMI, kūno masės, indeksas, indekso, skaičiuoklė, moterims, vyrams, idealus svoris">
     <meta name="author" content="Ruta Sipkauskaite">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KMI skaičiuoklė</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <title>KMI ir idealaus svorio skaičiuoklė</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 
-<body class="bg-light py-5">
-    <main class="d-grid m-auto justify-content-center content">
-        <div class="d-grid calculator">
-            <div class="bg-white rounded shadow-sm">
-                <form id="needs-validation" class="row p-3 p-sm-4" novalidate>
+<body class="bg-light m-auto">
+    <main class="row m-1 mb-4 m-sm-4 g-4 justify-content-center">
+        <div class="order-2 order-lg-1 col-12 col-lg-6 col-xxl-4">
+            <div class="bg-white rounded shadow-sm information p-3 p-sm-4">
+                <h5 class="mb-4">Apie KMI skaičiuoklę</h5>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Kaip apskaičiuojamas kūno masės indeksas?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>Kūno masės indeksas yra apskaičiuojamas naudojant ūgį ir svorį.</p>
+                                <p>Formulė yra <span class="fw-medium">KMI = kg/m2</span>, kur kg yra svoris
+                                    kilogramais, o
+                                    m2
+                                    yra ūgis metrais kvadratu.</p>
+                                <p class="mb-0">Pavyzdžiui, sveriate 70 kg ir esate 1,73 m ūgio. Pirmiausia,
+                                    apskaičiuojame
+                                    ūgio
+                                    kvadratą: 1,73x1,73 = 2,99. Tuomet, 70 (svorį) padaliname iš gauto 2,99, gauname
+                                    23,41.
+                                    Rezultatą
+                                    apvaliname vieno skaičiaus tikslumu po kablelio, t.y. <span
+                                        class="fw-medium"></span>23,4.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Liemens ir ūgio santykis
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Apskaičiavus liemens ir ūgio santykį, galite sužinoti, ar turite pilvo riebalų
+                                    perteklių,
+                                    net jei jūsų
+                                    KMI yra normalus.</p>
+                                <p>Norėdami apskaičiuoti juosmens ir ūgio santykį, išmatuokite savo liemenį ir
+                                    padalinkite
+                                    gautą skaičių iš
+                                    savo ūgio.</p>
+                                <p>Jei juosmens ir ūgio santykis yra 0,5 ar didesnis, tai reiškia, kad gali būti
+                                    padidėjusi
+                                    rizika
+                                    sveikatai.</p>
+                                <p>Norėdami išmatuoti juosmenį: raskite šonkaulių apačią ir klubų viršų (tiesiai virš
+                                    bambos).
+                                    Apvyniokite matavimo juostą aplink juosmenį viduryje tarp šių taškų.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Kas neturėtų naudotis skaičiuokle?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>KMI gali būti netikslus sportuojantiems žmonėms, nes raumenų masė yra sunkesnė už
+                                    riebalinę masę.
+                                    Taip pat netinka nėščioms moterims, senyvo amžiaus žmonėms, mažiems vaikams ir
+                                    sergant
+                                    tam
+                                    tikromis ligomis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Tolesni žingsniai
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Savo KMI rezultatą galite naudoti kaip atspirties tašką tolesnei diskusijai su šeimos
+                                    gydytoju apie
+                                    savo svorį ir bendrą sveikatos būklę.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-1 order-lg-2 col-12 col-lg-6 col-xxl-5">
+            <div class="bg-white rounded shadow-sm p-3 p-sm-4 border border-primary">
+                <h5 class="fs-5 mb-3">Kūno masės indekso skaičiuoklė</h5>
+                <form id="needs-validation" class="row" novalidate>
                     <div class="col-6 mb-2">
-                        <label for="weight" class="form-label">Svoris</label>
+                        <label for="weight" class="form-label">Svoris kilogramais</label>
                         <div class="input-group mb-3">
                             <input type="number" class="form-control" id="weight" aria-describedby="kg" step="any"
                                 required />
-                            <span class="input-group-text bg-white" id="kg">kg</span>
+                            <span class="input-group-text bg-white rounded-end" id="kg">kg</span>
                             <div class="invalid-feedback">
-                                Nurodykite savo svorį.
+                                Nurodykite svorį.
                             </div>
                         </div>
                     </div>
 
                     <div class="col-6 mb-2">
-                        <label for="height" class="form-label">Ūgis</label>
+                        <label for="height" class="form-label">Ūgis centimetrais</label>
                         <div class="input-group mb-3">
                             <input type="number" class="form-control" id="height" aria-describedby="cm" step="any"
-                                required />
-                            <span class="input-group-text bg-white" id="cm">cm</span>
+                                onkeypress="return /[0-9]/i.test(event.key)" required />
+                            <span class="input-group-text bg-white rounded-end" id="cm">cm</span>
                             <div class="invalid-feedback">
-                                Nurodykite savo ūgį.
+                                Nurodykite ūgį.
                             </div>
                         </div>
                     </div>
@@ -51,7 +152,7 @@
                             <option value="female">Moteris</option>
                             <option value="male">Vyras</option>
                         </select>
-                        <div id="genderHelp" class="form-text">Nurodykite savo lytį, jei norite sužinoti idealų svorį.
+                        <div id="genderHelp" class="form-text">Lytis reikalinga norint apskaičiuoti idealų svorį.
                         </div>
                     </div>
 
@@ -71,124 +172,122 @@
                     </div>
                 </form>
             </div>
-            <div class="bg-white rounded shadow-sm">
-                <div class="p-3 p-sm-4">
-                    <p><b>Wolt</b> programėlėje įvedę kodą <b>YVAQ3</b> gausite net <b>5€</b> nuolaidą <b>2</b> pirmiems
-                        maisto užsakymams! Tik naujiems
-                        klientams. <a
-                            class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                            href="https://get.wolt.com/YVAQ3" target="_blank">Parsisiųsti programėlę čia.</a>
+            <div class="bg-white rounded p-3 p-sm-4 mt-4 shadow-sm">
+                <div>
+                    <div id="result" class="visually-hidden">
+                        <h5 class="mb-3">Rezultatas</h5>
+                        <p>Jūsų kūno masės indeksas: <span id="calculated-bmi" class="fw-medium"></span>.</p>
+                    </div>
+
+                    <div id="weight-category-descriptions">
+                        <p>
+                            Kūno masės indeksas (KMI) padeda įsivertinti, ar svoris yra normalus.
+                        </p>
+                        <p>
+                            Tai yra tik vienas iš būdų įsivertinti, ar yra padidėjusi sveikatos problemų rizika,
+                            susijusi su viršsvoriu arba per mažu svoriu.
+                        </p>
+                        <p>
+                            Skaičiuoklė skirta suagusiems asmenims nuo 20 metų. Rezultatai gali būti netikslūs, jeigu
+                            esate nėščia arba žindanti.
+                        </p>
+                        <p id="underweight-description" class="visually-hidden">
+                            Jūsų svoris galimai yra <span class="fw-medium">per mažas</span>. Esant per mažam svoriui,
+                            papildomų kilogramų priaugimas gali sumažinti kaulų retėjimo ir susilpnėjusios imuninės
+                            sistemos tikimybę, bei sumažinti nuovargį. Moterims, turinčioms per mažą svorį, mėnesinės
+                            gali tapti nereguliarios arba visai sustoti. Mažo svorio vyrams gali sumažėti spermatozoidų
+                            skaičius.
+                        </p>
+                        <p id="normal-description" class="visually-hidden">
+                            Jūsų svoris galimai yra <span class="fw-medium">normalus</span>. Laikantis sveikų įpročių,
+                            yra lengviau išlaikyti esamą svorį.
+                        </p>
+                        <p id="overweight-description" class="visually-hidden">
+                            Galimas <span class="fw-medium">antsvoris</span>. Esant antsvoriui, papildomų kilogramų
+                            numetimas gali sumažinti sveikatos problemų tikimybę. Tačiau, jei esate labai raumeningo
+                            sudėjimo, Jūsų svoris gali būti priskirtas antsvorio kategorijai, tačiau vis tiek būti
+                            sveiki.
+                        </p>
+                        <p id="obese-type-1-description" class="visually-hidden">
+                            Galimas <span class="fw-medium">nutukimas</span>. Turint nutukimą, gali padidėti rimtų
+                            sveikatos sutrikimų tikimybė.
+                        </p>
+                        <p id="obese-type-2-description" class="visually-hidden">
+                            Galimas <span class="fw-medium">nutukimas</span>. Turint nutukimą, gali padidėti rimtų
+                            sveikatos sutrikimų tikimybė.
+                        </p>
+                        <p id="obese-type-3-description" class="visually-hidden">
+                            Galimas <span class="fw-medium">nutukimas</span>. Turint nutukimą, gali padidėti rimtų
+                            sveikatos sutrikimų tikimybė.
+                        </p>
+                    </div>
+
+                    <p id="ideal-weight" class="visually-hidden">
+                        Idealus svoris - <span class="fw-medium"><span id="calculated-ideal-weight"></span>kg</span>.
                     </p>
-                    <p><b>Wolt</b> - maisto pristatymas į namus.</p>
+                    <p>
+                        KMI nėra skirtas ligoms diagnozuoti.
+                    </p>
+                    <p>
+                        * Pateikta informacija yra tik švietimo tikslams ir nepakeičia profesionalių medicininių
+                        patarimų.
+                    </p>
+                </div>
+                <div class="border rounded overflow-auto mt-4">
+                    <table id="bmi-table" class="table table-borderless mb-0">
+                        <thead class="bg-secondary text-white">
+                            <tr>
+                                <th class="ps-4">KMI</th>
+                                <th class="pe-4">Kūno svoris</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="underweight">
+                                <td class="ps-4">&lt; 18,5</td>
+                                <td class="pe-4">Per mažas</td>
+                            </tr>
+                            <tr id="normal">
+                                <td class="ps-4">18,5 - 24,9</td>
+                                <td class="pe-4">Normalus</td>
+                            </tr>
+                            <tr id="overweight">
+                                <td class="ps-4">25 - 29,9</td>
+                                <td class="pe-4">Antsvoris</td>
+                            </tr>
+                            <tr id="obese-type-1">
+                                <td class="ps-4">30 - 34,9</td>
+                                <td class="pe-4">Pirmo lygio nutukimas</td>
+                            </tr>
+                            <tr id="obese-type-2">
+                                <td class="ps-4">35 - 39,9</td>
+                                <td class="pe-4">Antro lygio nutukimas</td>
+                            </tr>
+                            <tr id="obese-type-3">
+                                <td class="ps-4">&gt; 40,0</td>
+                                <td class="pe-4">Trečio lygio nutukimas</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="d-grid bg-white rounded p-3 p-sm-4 shadow-sm results">
-            <div>
-                <p id="result" class="d-flex align-items-center fs-5 visually-hidden">
-                    Jūsų kūno masės indeksas:
-                    <span id="calculated-bmi"
-                        class="rounded-circle bg-secondary-subtle text-emphasis-primary ms-2 px-2 py-2 fw-semibold"></span>
+        <div class="order-3 col">
+            <div class="bg-white rounded shadow-sm ads p-3 p-sm-4">
+                <h5 class="mb-3">Pasiūlymai</h5>
+                <p><span class="fw-medium">Wolt</span> mobilioje programėlėje įvedę kodą <span
+                        class="fw-medium">YVAQ3</span> gaukite iki <span class="fw-medium">10€</span> nuolaidą maisto
+                    užsakymams į namus.
+                    Tik naujiems
+                    klientams. <a
+                        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="https://get.wolt.com/YVAQ3" target="_blank">Parsisiųsti čia.</a>
                 </p>
-
-                <div id="weight-category-descriptions">
-                    <p>
-                        KMI yra kūno masės indekso sutrumpinimas, kuris leidžia
-                        įsivertinti, ar svoris yra sveikas priklausomai nuo ūgio.
-                    </p>
-                    <p>
-                        Tai yra tik vienas iš būdų įsivertinti, ar yra padidėjusi
-                        sveikatos problemų rizika, susijusi su viršsvoriu arba per mažu
-                        svoriu.
-                    </p>
-                    <p>
-                        Skaičiuokle galima naudotis, tik jei Jums yra daugiau nei 20
-                        metų ir nesate nėščia.
-                    </p>
-                    <p id="underweight-description" class="visually-hidden">
-                        Jūsų svoris yra <b>per mažas</b>. Papildomų kilogramų priaugimas gali
-                        sumažinti kaulų retėjimo ir susilpnėjusios imuninės sistemos
-                        tikimybę, bei sumažinti nuovargį. Moterims, turinčioms per mažą
-                        svorį, mėnesinės gali tapti nereguliarios arba visai sustoti.
-                        Mažo svorio vyrams gali sumažėti spermatozoidų skaičius.
-                    </p>
-                    <p id="normal-description" class="visually-hidden">
-                        Jūsų svoris yra <b>normalus</b>. Patariame laikykitis sveikų įpročių, kad
-                        išlaikytumėte esamą svorį.
-                    </p>
-                    <p id="overweight-description" class="visually-hidden">
-                        <b>Antsvoris</b>. Papildomų kilogramų numetimas yra geras
-                        pirmasis žingsnis siekiant sumažinti sveikatos problemų
-                        tikimybę. Tačiau, jei esate labai raumeningo sudėjimo, galite
-                        būti antsvorio kategorijoje pagal kūno masės indeksą ir vis tiek
-                        būti sveiki.
-                    </p>
-                    <p id="obese-type-1-description" class="visually-hidden">
-                        <b>Nutukimas</b>. Didesnė tikimybė turėti rimtų
-                        sveikatos problemų.
-                    </p>
-                    <p id="obese-type-2-description" class="visually-hidden">
-                        <b>Nutukimas</b>. Didesnė tikimybė turėti rimtų
-                        sveikatos problemų.
-                    </p>
-                    <p id="obese-type-3-description" class="visually-hidden">
-                        <b>Nutukimas</b>. Didesnė tikimybė turėti rimtų
-                        sveikatos problemų.
-                    </p>
-                </div>
-
-                <p id="ideal-weight" class="visually-hidden">
-                    Idealus svoris -
-                    <b><span id="calculated-ideal-weight"></span>kg.</b>
-                </p>
-                <p>
-                    KMI nėra skirtas ligoms diagnozuoti.
-                </p>
-                <p>
-                    * Pateikta informacija yra tik švietimo tikslais ir nepakeičia
-                    profesionalių medicininių patarimų.
-                </p>
-            </div>
-
-            <div class="border rounded results-table">
-                <table id="bmi-table" class="table table-borderless">
-                    <thead class="bg-secondary text-white">
-                        <tr>
-                            <th class="ps-4">KMI</th>
-                            <th class="pe-4">Kūno svoris</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="underweight">
-                            <td class="ps-4">&lt; 18,5</td>
-                            <td class="pe-4">Per mažas</td>
-                        </tr>
-                        <tr id="normal">
-                            <td class="ps-4">18,5 - 24,9</td>
-                            <td class="pe-4">Normalus</td>
-                        </tr>
-                        <tr id="overweight">
-                            <td class="ps-4">25 - 29,9</td>
-                            <td class="pe-4">Antsvoris</td>
-                        </tr>
-                        <tr id="obese-type-1">
-                            <td class="ps-4">30 - 34,9</td>
-                            <td class="pe-4">Pirmo lygio nutukimas</td>
-                        </tr>
-                        <tr id="obese-type-2">
-                            <td class="ps-4">35 - 39,9</td>
-                            <td class="pe-4">Antro lygio nutukimas</td>
-                        </tr>
-                        <tr id="obese-type-3">
-                            <td class="ps-4">&gt; 40,0</td>
-                            <td class="pe-4">Trečio lygio nutukimas</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class="mb-0">Pasinaudokite nemokamu pristatymu.</p>
             </div>
         </div>
     </main>
 
+    <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/calculate-result.js"></script>
 </body>
 
